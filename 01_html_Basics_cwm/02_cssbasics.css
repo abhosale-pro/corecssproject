@@ -1,0 +1,24 @@
+/* #products p {
+	color: orange;
+	}  */
+/* - all descendants
+• Direct Child selector: 1st child */
+
+#products> p {
+    color: orange;
+}
+
+#products+ p {
+    color: red;
+} 
+/* - immediately after product section as its selecting sibling
+
+• All of the siblings following product section  */
+
+#products ~ p {
+    color: orange;
+}	
+
+/* • Premature optimization is root of all evils - Donald Youth
+○ Browser read Right to left , 1st the p element, then id then section.. so on..
+Thus, Relational selectors are slow then basic  */

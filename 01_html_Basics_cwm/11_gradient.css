@@ -1,0 +1,10 @@
+.box{
+    width: 600px;
+    height: 200px;
+    /* background: linear-gradient(to right,dodgerblue,yellow); */
+    /* background: linear-gradient(to bottom right,dodgerblue,yellow); */
+    /* background: linear-gradient(45deg,dodgerblue,yellow 90%, tomato);  */
+    background: radial-gradient(circle at top left,white,yellow);
+
+    /* use cssgradient.io */
+}

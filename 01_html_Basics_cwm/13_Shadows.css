@@ -1,0 +1,18 @@
+.box{
+    width: 200px;
+    height: 200px;
+    background: coral;
+    /* box-shadow: 10px 10px; */
+    /* box-shadow: 10px -10px 10px grey; */
+    box-shadow: 0 0 30px grey;
+
+}
+
+h1{
+    color: white;
+    text-shadow:3px 3px 5px rgba(0,0,0,0.2); 
+    /* this will blend with all colors  */
+    padding-left: 1vw;
+
+/* Size of px = if the width of the viewport (the browser window) is 1000px , then 1vw would be equal to 10px */
+}

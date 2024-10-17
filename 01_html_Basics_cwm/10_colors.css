@@ -1,0 +1,17 @@
+/* NamesColors
+rgb 
+hsl
+HexDecimal */
+
+.box{
+    width: 200px;
+    height: 200px;
+    /* background-color: #9c5651; no transperancy*/
+    /* background-color: rgba(156, 86, 81,0.2); transparency */
+    /* hsl - hue saturation lightness hue = deg on a color wheel */
+    /* background-color: hsla(4, 100%, 40%,0.5); */
+    background-color: hsl(4deg 100% 40% / 18%);
+
+}
+
+ 

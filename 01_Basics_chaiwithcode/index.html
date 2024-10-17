@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Intro</title>
+    <style>
+        /* universal selector */
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* html{
+            background: url(https://images.pexels.com/photos/247763/pexels-photo-247763.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)
+            no-repeat center center;
+            background-size: cover;
+        } */
+
+        /* body{
+            background: url(https://images.pexels.com/photos/247763/pexels-photo-247763.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2) no-repeat center center; 
+            background-position: 0 0;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        } */
+
+        body{
+            background-color: #313131;
+        }
+        h1{
+            color: #fff;
+            background-color: #f00b0b; 
+            text-align: center;
+            padding: 20px;
+            margin: 20px;
+            /* margin collapes problem in css use inspect>computed to inspect the elements */
+            text-decoration: dotted;
+            border: solid 2px #000;
+        }
+        span{
+            color: #fff;
+            background-color: #00f; 
+            padding: 10px;
+            margin: 10px;
+            text-decoration: underline;
+            border: solid 2px #000; 
+            display: block;
+        }
+        p{
+            background-color: #f00b0b;
+            display:inline;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>This is a block level element.</h1>
+    <!-- Always use hex values since colors are quite stable as per the ui rendering engine -->
+     <span>This is a inline element</span>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, nihil?</p>
+</body>
+</html>
