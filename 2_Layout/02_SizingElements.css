@@ -1,0 +1,26 @@
+*, *::before, *::after{ 
+    /* All elements before and after contents are taken with boxsizing as border box or will default to contentbox */
+    box-sizing: border-box;
+    /* doesnot apply to psuedo elements */
+}
+
+body{
+    margin: 20px;
+}
+
+.box::before{
+    content: "Hello";
+}
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: gold;
+    padding: 20px;
+    border: 10px solid orange; 
+    /* increases the size of the box but margin doesnot affect but moves the box */
+    /* margin: 20px; */
+    /* box-sizing: content-box;  */
+    /* box-sizing: border-box;  content gets reduced */
+    display: inline-block;
+
+}

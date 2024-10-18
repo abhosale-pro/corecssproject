@@ -1,0 +1,60 @@
+
+/* Postioning 
+Relative : relative to element's normal position
+Absolute : relative to the parent
+Fixed : relative to the viewport
+*/
+
+
+
+.boxes{
+    border:3px solid lightgrey;
+    position: relative;
+}
+
+.box{
+    width: 5rem;
+    height: 5rem;
+}
+
+.box-one{
+    background-color: gold;
+}
+
+.box-two{
+    background-color: tomato;
+    /* position: relative;  */
+    /* by default static, relative to its normal position without affecting the others in the same containers*/
+    /* left: 4rem;
+    /* top: 2rem; */
+    /* bottom: 4rem; */
+    /* z-index: -1; /*towards the screen */
+    
+    /* position:absolute; ensure the parent is relative , which means box 2 is removed from the normal flow asif it doesnot exists */
+    /* right:0; */
+    /* bottom: 0; */
+    /* z-index: 99999; */
+    
+    /*nav bar fixed on top*/
+    /* position: fixed; 
+    top: 0;
+    z-index: 99999; */
+
+    /*nav bar fixed on top & dynamic width*/
+    position: fixed;
+    top: 0;
+    left: 2rem;
+    right: 2rem;
+    width: auto;
+    z-index: 99999;
+
+}
+
+body{
+    /*Body made longer for demo for fixed code line 30*/
+    height: 200vh;
+}
+
+.box-three{
+    background-color: dodgerblue;
+}

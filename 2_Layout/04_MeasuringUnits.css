@@ -1,0 +1,27 @@
+html{
+    font-size: 62.5%; 
+    /* 10px = 62.5% of 16px */
+}
+
+body{
+    margin: 0;
+    /* width: 300px; */
+
+}
+
+
+.box{
+    /* width: 50%;  */
+    /* 50% of the body element parent */
+    /* width: 10em;  */ 
+    /*takes Html default size of 16 pixels (MEDIUM RECOMMEDNED IN BROWSER SETTINGS OF CHROME) font size so its 10*16 = 160px*/
+    width: 15rem; 
+    /*takes Html default size of 16 pixels font size of the r=root elements so its 10*16 = 160px*/
+    height: 200px;
+    /* height: 100%;  */    /* of no use as the height will be 0 */
+    height: 100vh;     /* 100% of viewport */
+    
+    /* px is not relative so may not be responsive but if we need it fixed like the top border size irrespective of vw size */
+    background-color: orange;
+    border-top: 2px solid orangered;
+}
