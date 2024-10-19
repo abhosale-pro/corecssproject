@@ -1,0 +1,33 @@
+body{
+    margin: 10px;
+}
+
+/* parent collapsing */
+.tweet{
+        border: solid lightgray;
+        /*if the p element is removed the tweet parent class collapses as avatar is floated & parent ignores floated element */
+        /*use div with clear class to remove float or use psuedo class clearfix best option or overflow but its a hack not a solution */
+        overflow: hidden; /*otherthan visible*/
+}
+
+/* .clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+} */
+
+.avatar{
+    width: 5rem;
+    height:5rem;
+    background-color: gold;
+    float: left;
+    margin-right: 0.5rem 
+    /*relative unit if the text changes in size it will automatically adjust*/
+    /* float: right;
+    margin-right: 0.5rem  */
+}
+
+.clear{
+    clear: left;
+    clear: both;
+}

@@ -1,0 +1,141 @@
+body{
+    margin:10px;
+}
+
+/* .container{
+    border:3px solid lightgrey;
+    display: flex;/*default direction is row*/
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+    /* flex-direction: row-reverse; */
+/* } */
+
+
+/* .box{
+    width: 5rem;
+    height: 5rem;
+    background: gold;
+    margin: 1rem;
+} */
+
+/* Aligning Items  */
+/* aXES DIRECTION DIAGRAM */
+
+/* 2 PROPERTIES TO ALIGnitems: 
+justify-content (along the main axis)
+align-items (along the cross axis)
+align-content
+
+*/
+
+
+.container{
+    border:3px solid lightgrey;
+    display: flex;
+    /*default direction is row*/
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+    flex-direction: row;
+    /* justify-content: flex-end; */
+    /* justify-content: flex-start; */
+    justify-content: center;
+    /* justify-content: space-evenly; */
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    /* align-items: flex-end; */
+    align-items: center;
+    /* flex-wrap: wrap; */
+     /* by default its nowrap */
+    height: 90vh;
+    /* bydefault the content gets closer to upper and lower margins */
+    /* align-content: center; */
+
+
+}
+
+
+/* .box{
+    width: 5rem;
+    height: 5rem;
+    background: gold;
+    margin: 1rem;
+} */
+
+
+.box-one{
+    /*overides the alignitems property earlier*/
+    /* align-self: flex-start; */
+    /* align-self: flex-end; */
+}
+
+img{
+    display: block;
+}
+
+/* SizingITems: 
+    image uploaded 
+    flex is short for basis, grow(factor), shrink(shrink factor)
+*/
+
+ /* 1 */
+/*.box{
+    flex-basis: 10rem; 
+    depends on the flex-direction as its row it picks width and overides it
+    width: 5rem;
+    height: 5rem;
+    background: gold;
+    margin: 1rem;
+}*/ 
+
+/* .box-one{
+    flex-basis: 5rem;
+} */
+
+/* 2 */
+/*
+ .box{
+    flex-basis: 5rem;
+    default = 0
+    flex-grow: 1;
+    width: 5rem;
+    height: 5rem;
+    background: gold;
+    margin: 1rem;
+}
+*/
+/* .box-one{
+    flex-grow: 2; 
+    A has flex-grow = 2 B=C = 1 then total = 4, 4/3 then 2 will be A 
+    then rest will get 1each => algorithm of flex-grow
+} */
+
+/* 3 */
+
+/* .box{
+   flex-basis: 15rem;
+   flex-shrink: 1;
+   width: 5rem;
+   height: 5rem;
+   background: gold;
+   margin: 1rem;
+}
+
+.box-one{
+   flex-shrink: 0;
+
+} */
+
+/* 4 */
+
+.box{
+    flex:1 15rem; /*grow basis basis*/
+   width: 5rem;
+   height: 5rem;
+   background: gold;
+   margin: 1rem;
+}
+
+.box-one{
+   flex-shrink: 0;
+
+}
