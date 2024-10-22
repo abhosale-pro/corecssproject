@@ -1,0 +1,16 @@
+body{
+    background: url(../2_Layout/4_Images/AxesDirections.png);
+    background-repeat: repeat-x ;
+    background-position: -100px 100px;
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+
+
+}
+
+img:hover{
+    filter: grayscale(70%) blur(3px);
+    /* check filter on can iuse.com */
+    /*psuedo class selectors*/
+}

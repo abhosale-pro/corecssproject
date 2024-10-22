@@ -1,0 +1,43 @@
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.box{
+    background: gold;
+    padding: 1rem;
+}
+
+.box:nth-of-type(2){
+    background: dodgerblue;
+}
+
+/*break point = when the style breaks eg : 600px */
+
+/*between 600 - 900 px*/
+/* @media screen and (min-width:600px) and (max-width:900px){
+    .container{
+        flex-direction: row;
+    }
+} */
+
+@media screen and (max-width:600px){
+    .container{
+        flex-direction: row;
+    }
+    .box{
+        background-color: #fff;
+    }
+}
+
+/* for printers  */
+
+@media print {
+    body{
+        font-size: 12pt;
+    }
+
+    .box{
+        padding : 0.5cm
+    }
+} 

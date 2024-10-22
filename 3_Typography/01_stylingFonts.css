@@ -1,0 +1,92 @@
+/*Register the font*/
+
+@font-face {
+    font-family: 'open_sans';
+    src: url('/3_Typography/Fonts/OpenSans-Bold-webfont.woff') format('woff2'),
+         url('/3_Typography/Fonts/OpenSans-Bold-webfont.woff') format('woff');
+    font-weight: Bold;
+    font-style: normal;
+    font-display: fallback;
+    /*swap - 10 sec to download font, optional/fallback - best not critical, block will invisible */ 
+    /*flash of unstyled Txt (FLOUT) chrome will fallback font, but others flash of invisible text*/
+    /*Custom Subsetting under expert wof format on font squirrel to reduce font size*/
+}
+
+@font-face {
+    font-family: 'open_sans';
+    src: url('/3_Typography/Fonts/OpenSans-Regular-webfont.woff2') format('woff2'),
+         url('/3_Typography/Fonts/OpenSans-Regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body{
+    margin: 10px;
+    /* Websafe Fonts */
+    
+    font-family: 'open_sans',Arial, Helvetica, sans-serif;
+    /*inheritance of fonts to all child items*/
+
+}
+
+p{
+    /* code duplication 
+    /* font-family: Arial, Helvetica, sans-serif;  */
+
+    font-weight: bold;
+    /*bold - 700, normal - 400*/
+
+    font-style: italic;
+    font-size: 1rem;
+    color: #333; 
+    margin: 3rem 0 1rem;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    width: 50ch; 
+    /*50 -70 0 chars */
+}
+
+.p2{
+    width:50ch;
+    text-align: left;
+    text-indent: 1rem;
+    text-decoration: line-through ;
+    text-transform: capitalize;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* line-clamp: 3; */
+}
+
+.p3{
+    width: 50ch;
+    column-count: 2;
+    column-gap: 3rem;
+    column-rule: 3px dotted #999;
+    direction: rtl;
+}
+
+/* a{
+    /* code duplication   
+    font-family: Arial, Helvetica, sans-serif; 
+    }*/
+h1{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #222; 
+        margin: 3rem 0 1rem;
+        line-height: 1.5rem;
+}
+
+a{
+        margin: 3rem 0 1rem;
+}
+
+
+
+@media screen and (min-width:400px) {
+    html{
+        font-size: 130%;
+    }
+}
