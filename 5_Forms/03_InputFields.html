@@ -10,13 +10,120 @@
 </head>
 <body>
     <form >
+        <label >Number</label>
         <input type="number">
+        <label >Password</label>
         <input type="password">
+        <label >Enter Date</label>
         <input type="date">
-        <input type="email">
-
-        <textarea name="input-form" id="" cols="30" rows="20"></textarea>
-    </form>
+        <label >Email</label>
+        <!-- <input type="email" value="programing@atul.com"> -->
+        <!-- <input type="email" placeholder="Email"> -->
+        <!-- <input type="email" readonly> -->
+        <!-- <input type="email" value="..." disabled> -->
+        <input type="email" value="..." maxlength="5" autofocus>
+        
+        <label >Comments</label>
+        <textarea name="input-form" id="" cols="30" rows="20">Comments... no value / placeholder</textarea>
+        
+        <input type="text" list = "countries" autocomplete="off">
+       <datalist id="countries">
+           <option data-value="1">India</option>
+       </datalist>
     
+       <select>
+        <option value="-1">html</option>
+        <option value="0" selected>css</option>
+        <option value="1">js</option>
+        <option value="2">node</option>
+        <option value="-3">sql</option>
+       </select>
+       
+       <select multiple>
+        <optgroup label = "FrontEndcourses">
+            <option value="-1">html</option>
+            <option value="0" selected>css</option>
+            <option value="1">js</option>
+            <option value="2">node</option>
+            <option value="-3">sql</option>
+        </optgroup>
+       </select>
+
+    </form>
+    <!-- datalist or suggestion list not working -->
+    
+    <!-- CheckBoxes -->
+    <div>
+        <input type="checkbox" name="" id="frontend" disabled>
+        <label class ="label-inline" for="">Use input: to get options of input</label>
+    </div>
+    <div>
+        <input type="checkbox" name="" id="frontend" checked>
+        <label class ="label-inline" for="">milligram class label-inline</label>
+    </div>
+    
+    <!-- RadioButtons -->
+    <div>
+        <input type="radio" name="membership" id="silver" checked>
+        <label for="Silver" class="label-inline">Silver</label>
+    </div>
+    <div>
+        <input type="radio" name="membership" id="Gold" disabled> 
+        <label for="Gold" class="label-inline">Gold</label>
+    </div>
+
+    <!-- Sliders -->
+     <div><input id="range" type="range" min ="0" max="100" value="90">
+        <label for="range" class="label-inline"></label>
+    </div>
+
+    <!-- FileInputs -->
+     <input type="file" multiple>
+     <input type="file" accept=".jpg, .pdf">
+
+     <!-- Grouping Related Fields -->
+
+     <fieldset>
+        <legend>Billing Address</legend>
+        <input type="text" name="" id="">
+        <input type="text" name="" id="">
+        <input type="text" name="" id="">
+     </fieldset>
+     <fieldset>
+        <legend>Payments</legend>
+        <input type="text" name="" id="">
+        <input type="text" name="" id="">
+        <input type="text" name="" id="">
+     </fieldset>
+     <Section>
+        <h2>Section-Heading Combo</h2>
+        <input type="text" name="" id=""><input type="text" name="" id=""><input type="text" name="" id="">
+     </Section>
+
+     <!-- Hidden Fields -->
+
+     <input type="hidden" name="course-id" value="1234">
+
+    <!-- Data Validation applied to -->
+    <ul style="line-style-type:disc">
+        Validation is required for 
+        <li>RequiredFields</li>
+        <li>Emails</li>
+        <li>Numbers</li>
+        <li>Dates</li>
+    </ul>
+    <div>
+        <input type="text" required minlength="3" maxlength="10">
+        Always use max length
+        <button type="submit">Submit</button>
+        
+        <input type="email" required minlength="3" maxlength="10">
+        <button type="submit">Submit</button>
+        <div>
+            <input type="numbers" required min="3" max="5">
+            <button type="submit">Submit</button>
+        </div>
+    </div>
+
 </body> 
 </html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submitting a Form</title>
+    <link rel="stylesheet" href="04_submittingAForm.css">
+    <!-- Milligram CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+</head>
+<body>
+    <form action="https://formspree.io/forms" method="POST">
+        <!-- Formspree can send email, notifications, submissions, report, what values -->
+        <!--most used : post - form data under inspect
+            google uses: get - data will be in target url
+        -->
+        <input type="text" placeholder="Name" name="Name">
+        <input type="text" placeholder="email" name="Email">
+        <!-- Not preferred --> <input type="submit" value="Submit">
+        <button type="submit">
+            <i class="fas fas-alert">icon</i> Submit</button>
+        
+    </form>
+</body> 
+</html>

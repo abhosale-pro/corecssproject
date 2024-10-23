@@ -4,4 +4,10 @@ form{
 }
 
 textarea{
+    height: 50vh;
+    resize: none;
+}
+
+datalist{
+    /* html datalist element developer mozilla with customer styles */
 }

@@ -1,0 +1,23 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background: gold;
+    /* transition: transform 0.5s ease-out ; */
+    transition: transform 0.5s linear, background 1s ;
+    /* transition: transform 0.5s cubic-bezier() ; */
+    /* cubic-bezier.COM */
+
+}
+
+
+.box:hover{
+    transform: rotate(45deg);
+    background: dodgerblue;
+}
