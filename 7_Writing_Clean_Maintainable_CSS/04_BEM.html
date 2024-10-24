@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04_BEM</title>
+    <link rel="stylesheet" href="04_BEM.css">
+    <!-- Milligram CSS -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"> -->
+</head>
+<body>
+    <!-- BEM = Block element modifier convention for naming 
+     block - card, 
+     element - header, price, 
+     modifier - card--popular -->
+
+    <div class="card card--popular">
+        <header class="card__header"><span class="card__price"></span></header>
+    </div>
+
+    <div class="card__body">
+        <button class="btn"></button>
+    </div>
+
+    <img src="../7_Writing_Clean_Maintainable_CSS/bemblocks.jpg" alt="bemblocks.jpg">
+</body> 
+</html>
